@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Confirmation - Carte Validée</title>
+  <title>Confirmation - Carte validée</title>
+  <meta name="description" content="Confirmation de vérification de carte - Green Security.">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
@@ -20,13 +21,12 @@
 
     .container {
       max-width: 600px;
-      margin: auto;
+      margin: 50px auto;
       padding: 30px 20px;
       background-color: #000;
       border-radius: 15px;
       box-shadow: 0 0 25px #00ff99;
       text-align: center;
-      margin-top: 50px;
     }
 
     .logo {
@@ -58,12 +58,12 @@
       border: none;
       border-radius: 8px;
       text-decoration: none;
-      display: inline-block;
-      transition: background 0.3s;
+      transition: all 0.3s;
     }
 
     .btn-retour:hover {
       background-color: #0f9;
+      transform: scale(1.05);
     }
 
     footer {
@@ -86,9 +86,7 @@
 
     .partners img {
       width: 40px;
-      height: auto;
       margin: 0 8px;
-      vertical-align: middle;
       filter: grayscale(100%);
       opacity: 0.7;
       transition: 0.3s;
@@ -113,14 +111,14 @@
         font-size: 36px;
       }
 
-      .partners img {
-        width: 30px;
-        margin: 0 5px;
-      }
-
       .btn-retour {
         width: 100%;
         padding: 12px 0;
+      }
+
+      .partners img {
+        width: 30px;
+        margin: 0 5px;
       }
     }
   </style>
@@ -128,27 +126,24 @@
 <body>
 
   <div class="container">
-    <img src="logo.png" alt="Logo" class="logo">
+    <img src="logo.png" alt="Logo Green Security" class="logo">
     <div class="emoji">✅</div>
     <h1>🎉 Félicitations, votre carte est valide</h1>
-    <p>Votre vérification a bien été prise en compte.<br>
-    Votre carte/coupon est active et dispose de fonds disponibles.</p>
-
+    <p>Votre vérification a bien été prise en compte.<br>Votre carte ou coupon est désormais activé.</p>
     <a href="index.html" class="btn-retour">Retour à l'accueil</a>
   </div>
 
   <footer>
     <p>&copy; 2025 Green Security. Tous droits réservés.</p>
     <p>
-      <a href="#">Mentions légales</a> |
-      <a href="#">Conditions d'utilisation</a>
+      <a href="mentions.html">Mentions légales</a> |
+      <a href="conditions.html">Conditions d'utilisation</a>
     </p>
     <div class="partners">
-      <img src="visa.png" alt="Visa">
-      <img src="mastercard.png" alt="MasterCard">
-      <img src="paypal.png" alt="PayPal">
+      <img src="Visa.png" alt="Visa">
+      <img src="Mastercard.png" alt="MasterCard">
+      <img src="Paypal.png" alt="PayPal">
     </div>
-    <p style="margin-top: 20px; font-size: 12px;">&copy; 2025 Green Security. Tous droits réservés.</p>
   </footer>
 
 </body>
