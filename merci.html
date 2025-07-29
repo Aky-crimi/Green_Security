@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Confirmation - Carte validée</title>
-  <meta name="description" content="Confirmation de vérification de carte - Green Security.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Confirmation - Green Security</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #0d0d0d;
       color: #00ff99;
-      margin: 0;
-      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    .container {
+    header {
+      background-color: #006644;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
       max-width: 600px;
-      margin: 50px auto;
-      padding: 30px 20px;
+      margin: auto;
       background-color: #000;
       border-radius: 15px;
       box-shadow: 0 0 25px #00ff99;
       text-align: center;
-    }
-
-    .logo {
-      width: 100px;
-      margin-bottom: 20px;
     }
 
     .emoji {
@@ -45,8 +48,8 @@
     }
 
     p {
-      font-size: 16px;
       color: #ccc;
+      font-size: 16px;
     }
 
     .btn-retour {
@@ -58,18 +61,17 @@
       border: none;
       border-radius: 8px;
       text-decoration: none;
-      transition: all 0.3s;
+      display: inline-block;
+      transition: background 0.3s;
     }
 
     .btn-retour:hover {
       background-color: #0f9;
-      transform: scale(1.05);
     }
 
     footer {
       background-color: #111;
       padding: 30px 10px;
-      margin-top: 60px;
       color: #888;
       text-align: center;
     }
@@ -98,51 +100,45 @@
     }
 
     @media screen and (max-width: 480px) {
-      .container {
-        margin-top: 30px;
-        padding: 20px 15px;
+      main {
+        padding: 25px 15px;
       }
 
       h1 {
         font-size: 20px;
       }
 
-      .emoji {
-        font-size: 36px;
-      }
-
       .btn-retour {
         width: 100%;
-        padding: 12px 0;
-      }
-
-      .partners img {
-        width: 30px;
-        margin: 0 5px;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <img src="logo.png" alt="Logo Green Security" class="logo">
+  <header>
+    <img src="logo.png" alt="Logo Green Security">
+  </header>
+
+  <main>
     <div class="emoji">✅</div>
-    <h1>🎉 Félicitations, votre carte est valide</h1>
-    <p>Votre vérification a bien été prise en compte.<br>Votre carte ou coupon est désormais activé.</p>
+    <h1>Vérification réussie</h1>
+    <p>Votre demande a été prise en compte avec succès.<br>
+    Votre carte ou coupon est maintenant actif et sécurisé.</p>
+
     <a href="index.html" class="btn-retour">Retour à l'accueil</a>
-  </div>
+  </main>
 
   <footer>
     <p>&copy; 2025 Green Security. Tous droits réservés.</p>
     <p>
-      <a href="mentions.html">Mentions légales</a> |
-      <a href="conditions.html">Conditions d'utilisation</a>
+      <a href="#">Mentions légales</a> |
+      <a href="#">Conditions d'utilisation</a>
     </p>
     <div class="partners">
-      <img src="Visa.png" alt="Visa">
-      <img src="Mastercard.png" alt="MasterCard">
-      <img src="Paypal.png" alt="PayPal">
+      <img src="visa.png" alt="Visa">
+      <img src="mastercard.png" alt="MasterCard">
+      <img src="paypal.png" alt="PayPal">
     </div>
   </footer>
 
